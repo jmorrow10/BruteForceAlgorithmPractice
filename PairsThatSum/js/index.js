@@ -4,7 +4,16 @@
  */
 var pairsThatSum = (array,v) => {
 	// TODO
-	return [];
+	var values = [];
+
+	for(let i = 0; i < array.length; i++){
+		for(let j = 0; j < array.length; j++){
+			if (array[i] + array[j] == v){
+				values.push([array[i], array[j]])
+			}
+		}
+	}
+	return values;
 }
 
 /*
